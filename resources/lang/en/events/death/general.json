@@ -9395,5 +9395,82 @@
     ],
     "changed": -3
   }
+},
+{
+    "event_id": "gen_fed_up_deputy_death",
+    "location": [
+        "any"
+    ],
+    "season": [
+        "any"
+    ],
+    "tags": [  ],
+    "frequency": 2,
+    "event_text": "BETA", 
+    "m_c": {
+        "status": [
+            "-leader",
+            "-deputy"
+        ],
+        "relationship_status": [
+            "loves",
+            "trusts",
+            "understands"
+        ],
+        "dies": true
+    },
+    "r_c":{
+        "status": [
+            "deputy"
+        ],
+        "trait": [
+        ]
+    },
+    "history": [
+        {
+            "cats": [
+                "m_c"
+            ],
+            "death": "m_c was a casualty from a war. "
+        }
+    ],
+    "relationships": [
+        {
+            "cats_to": [
+                "leader"
+            ],
+            "cats_from": ["r_c"],
+            "mutual": false,
+            "values": [
+                "like",
+                "trust"
+            ],
+            "amount": -15,
+            "log": {
+                "cats_from": "cat_from felt that m_c's death was avoidable."
+            }
+
+        }
+    ],
+    "future_event": [
+        {
+           "event_type": "death",
+           "pool": {
+            "sub_type": ["murder"],
+            "event_id": ["gen_deputy_takes_out_leader_death"]
+           },
+           "moon_delay": [1,3],
+           "involved_cats": {
+            "m_c": "r_c",
+            "mur_c": {
+                "status": ["leader"]
+            }
+           }
+
+        }
+    ]
 }
 ]
+
+
+
