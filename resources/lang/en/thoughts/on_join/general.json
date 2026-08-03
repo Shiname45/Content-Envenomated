@@ -10,24 +10,12 @@
         "strings": [
             "Is snuggled safe in the nursery"
         ],
-        "main_status_constraint": ["kitten", "newborn"]
-    },
-    {
-        "id": "stolen_kit",
-        "strings":[
-            "Is looking around nervously"
-        ],
-        "main_status_constraint": [
-            "kitten"
-        ],
-        "main_backstory_constraint": [
-            "stolenkit3"
-        ]
         "involved_cats": {
             "m_c": {
-                "age": ["kitten","newborn"]
+                "age": ["kitten", "newborn"]
             }
         }
+    
     },
     {
         "id": "stolen_kit",
