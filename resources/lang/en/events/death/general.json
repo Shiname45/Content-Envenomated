@@ -10110,5 +10110,77 @@
         }
 
     ]
+},
+{
+  "event_id": "War_leader_Deputy_duel",
+    "location": [
+        "any"
+    ],
+    "season": ["any"],
+    "sub_type": ["murder", "war"],
+    "tags": ["low_lives", "all_lives"],
+    "frequency": 2,
+    "event_text": "r_c frustrated over m_c's leadership, challenges the leader to a duel. c_n watched as r_c brutally wounded m_c. ",
+    "m_c": {
+        "status": [
+            "leader"
+        ],
+        "trait": [
+            "bloodthirsty",
+            "cold",
+            "fierce",
+            "troublesome",
+            "strange",
+            "faithful",
+            "righteous"
+        ],
+        "skill": [
+            "-FIGHTER, 2"
+        ],
+        "dies": true
+    },
+    "r_c": {
+        "status": [
+            "deputy"
+        ],
+        "trait": [
+            "righteous",
+            "childish",
+            "faithful",
+            "loving",
+            "rebellious",
+            "vengeful",
+            "bold",
+            "confident",
+            "responsible"
+
+        ]
+    },
+    "history": [
+        {
+            "cats": [
+                "m_c"
+            ],
+            "death": "m_c was brutally murdered in a duel with c_n's deputy. "
+        }
+    ],
+    "relationships": [
+        {
+            "cats_to": [
+                "r_c"
+            ],
+            "cats_from": [
+                "clan",
+                "high_lawful",
+                "high_social"
+            ],
+            "mutual": false,
+            "values": [
+                "respect"
+            ],
+            "amount": 10,
+            "log": {"cats_from": "cat_from witnessed cat_to murder {PRONOUN/cat_from/POSS} leader in a duel." }
+        }
+    ]
 }
 ]
