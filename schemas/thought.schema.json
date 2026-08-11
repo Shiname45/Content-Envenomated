@@ -476,7 +476,7 @@
             "type": "string"
           },
           {
-            "pattern": "^[a-z]+:(camp[0-9]_)*camp[0-9]$",
+            "pattern": "^-?[a-z]+:(camp[0-9]_)*camp[0-9]$",
             "type": "string"
           }
         ]
@@ -718,7 +718,9 @@
         "rogue",
         "-rogue",
         "clancat",
-        "-clancat"
+        "-clancat",
+        "guide",
+        "-guide"
       ],
       "title": "Status",
       "type": "string"
@@ -787,17 +789,9 @@
           "type": "array"
         },
         "mutual": {
-          "anyOf": [
-            {
-              "type": "boolean"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
           "description": "Controls if the relationship is required in both directions",
-          "title": "Mutual"
+          "title": "Mutual",
+          "type": "boolean"
         },
         "constraints": {
           "description": "Controls which relationship constraints are required",
@@ -811,6 +805,7 @@
       "required": [
         "cats_from",
         "cats_to",
+        "mutual",
         "constraints"
       ],
       "title": "ThoughtRelationshipConstraint",
