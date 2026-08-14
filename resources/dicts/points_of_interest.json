@@ -113,6 +113,18 @@
         "category": "terrain",
         "biome": ["beach"],
         "tags": ["Twolegs:present", "tainted", "prey:water", "water:ocean"]
+    },
+    "terrain_beaverdam": {
+        "category": "terrain",
+        "biome": [
+            "forest",
+            "plains",
+            "mountainous",
+            "wetlands"
+            ],
+        "tags": [
+            "prey:water",
+            "water:still"
+            ]
+        }
     }
-
-}
